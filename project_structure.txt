@@ -1,0 +1,10 @@
+.
+├── main.py
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── main.js
+├── templates/
+│   └── index.html
+└── requirements.txt 

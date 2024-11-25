@@ -1,0 +1,36 @@
+APP RULES:
+
+fastapi webapp using daisyui, taiwind and anime js
+colorful with beautiful aniamted gradients
+main.py should be in root folder. it will run the app with main:app 127 with reload port 8001
+
+STEP 1:
+beautiful and animated title "Virtual Limit Mindmapper
+absolutely stunning simple text input box very simple but incredibly elegant and beautiful.
+
+STEP 2:
+from openai import OpenAI
+client = OpenAI()
+
+completion = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant. JSON word has to be in system prompt for json mode"},
+        {
+            "role": "user",
+            "content": "Write a haiku about recursion in programming."
+        },
+        response_format={ "type": "json_object" }
+    ]
+)
+
+print(completion.choices[0].message)
+
+enter key will send the topic to backend
+diplay a waiting animation while the call is being made to the backend
+Lets use this call to return a detailed mindmap. 
+lets display this to the user in a beatuiful visual.
+make sure the mindmap is beautiful and animated.
+make sure the user can pan and zoom in and out of the mindmap area.
+make sure the mindmap area fits in to its element correctly.
+lets scroll down to the mindmap when it is ready
